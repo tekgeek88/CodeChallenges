@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class CodingChallenge05 {
+public class CodeChallenge05 {
 
 	public static void main(String[] args) {
 		
