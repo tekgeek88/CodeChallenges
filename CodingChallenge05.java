@@ -142,4 +142,4 @@ public class CodingChallenge05 {
 		
 	}
 
-} // end of class
+} // end of class 
