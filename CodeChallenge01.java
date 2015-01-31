@@ -24,7 +24,7 @@ public class CodeChallenge01 {
 			double inputY;		// The variable as exponent
 			String inputName = "Name";	// The variable used to store users name
 			boolean playAgain;		// The variable that allows program to repeat.
-			int inputPlayAgain;
+			int inputPlayAgain;	// boolean for the while loop
 			
 			//Set initial value for loop statement
 			playAgain = true;
