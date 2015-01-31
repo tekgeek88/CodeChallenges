@@ -141,5 +141,7 @@ public class CodeChallenge05 {
 		System.out.println(sk);
 		
 	}
+	
+	// I just added this line
 
 } // end of class 
