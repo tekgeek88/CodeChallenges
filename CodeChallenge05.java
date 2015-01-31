@@ -9,39 +9,28 @@ public class CodeChallenge05 {
 		Scanner userInput = new Scanner (System.in);
 		
 		// the value of k at the end of the program
-		double z;
+		double resultK;
 		// initializing 
-		z = 0; 
+		resultK = 0; 
 		// comment
-		// sum of all k outputs
-		double sk;
-		//initializing
-		sk = 0;
+		
+		double sumK; // sum of all k outputs
+		sumK = 0;
 		
 		// value of k^2
-		double v;
+		double kSquared;
 		
-		// the first input number in the equations ( a*k^2 - b*k + c ).
-		double a;
+		// The variables for ( Ak^2-Bk+C ).
+		double a,b,c;
 		// comment
-		// the second input number in the equations ( a*k^2 - b*k + c ).
-		double b;
-		
-		// the third input number in the equations ( a*k^2 - b*k + c ).
-		double c;
-		
 		// when the program hits this input number, it stops
 		double d;
-
-		
-		boolean notZero;
-		notZero = true;
-		 
 
 		/*
 		 * Asks the user to input which numbers for the equation ( a*k^2 - b*k + c )
 		 */
-		
+		boolean notZero;
+		notZero = true;
 		System.out.println("\n\nWelcome,");
 		System.out.println("this program lets you create you own equations and find out when "
 				+ "the sum of that equation reachs a specified number.");
@@ -100,23 +89,23 @@ public class CodeChallenge05 {
 		for (double k = 1; k <= 20000; k++){
 			
 			if (a > 0){
-				v = Math.pow(k, 2);
-				sk = (v*a - b*k + c) + sk;
+				kSquared = Math.pow(k, 2);
+				sumK = (kSquared*a - b*k + c) + sumK;
 
-				if (sk > d){
-					z = k;
+				if (sumK > d){
+					resultK = k;
 					break;
 				}
 			}
 		
 			else if (a < 0){
 				
-				v = Math.pow(k, 2);
-				sk = (v*a - b*k + c) + sk;
+				kSquared = Math.pow(k, 2);
+				sumK = (kSquared*a - b*k + c) + sumK;
 				
 				
-				if (sk < d){
-					z = k;
+				if (sumK < d){
+					resultK = k;
 					break;
 				}
 			}
@@ -136,9 +125,9 @@ public class CodeChallenge05 {
 		System.out.println("It stopped at = " + d);
 		System.out.println();
 		System.out.print("The final value of k = ");
-		System.out.println(z);
+		System.out.println(resultK);
 		System.out.print("The final sum value  = ");
-		System.out.println(sk);
+		System.out.println(sumK);
 		
 	}
 	
