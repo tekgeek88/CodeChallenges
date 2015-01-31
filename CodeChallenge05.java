@@ -12,7 +12,7 @@ public class CodeChallenge05 {
 		double z;
 		// initializing 
 		z = 0; 
-		
+		// comment
 		// sum of all k outputs
 		double sk;
 		//initializing
@@ -23,7 +23,7 @@ public class CodeChallenge05 {
 		
 		// the first input number in the equations ( a*k^2 - b*k + c ).
 		double a;
-		
+		// comment
 		// the second input number in the equations ( a*k^2 - b*k + c ).
 		double b;
 		
