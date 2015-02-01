@@ -51,12 +51,15 @@ public class CodeChallenge04 {
 	else if (inputX == 0){
 		System.out.println("else if x == 0 has ran");
 		    if (inputY == 0){
-		       System.out.println("The angle can only equal 0");
+		       System.out.println("inputY == 0");
+		    	System.out.println("The angle can only equal 0");
 		    }
 		    else if (inputY < 0){
+		    	System.out.println("inputY < 0");
 		    	System.out.println("The angle can only be 270 degrees");
 		    }
 		    else if (inputY > 0){
+		    	System.out.println("inputY > 0");
 		    	System.out.println("The angle can only be 90");
 		    }
 	}// end of else if X == 0

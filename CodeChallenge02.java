@@ -9,13 +9,13 @@
  *
  */
 
-public class CodeChallenge02 {
+public class CodeChallenge02 { // beginning of class
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { // beginning of main method
 		
 		// Define all variables 
-		double aLength, bLength, cLength;
-		double Perimeter, sPerimeter, Area;
+		Double aLength, bLength, cLength;
+		Double Perimeter, sPerimeter, Area;
 		
 		//Display intro graphics
 				System.out.println("\n\n           ,********************************************,");
@@ -50,15 +50,27 @@ public class CodeChallenge02 {
 		Area = Math.sqrt(sPerimeter * (sPerimeter - aLength) 
 				* (sPerimeter - bLength) * (sPerimeter - cLength));
 		
-		//  Display the lengths of each side to the user
+		if (Area.isNaN()){
+			System.out.println("\n\nThe lenght of of one side cannot be greater than the sum of the other two sides\n\n");
+		}//end if
+		else{
+			System.out.println("\n\nThe Perimeter of a triangle with side lengths (a) " + aLength);
+			System.out.println("                                              (b) " + bLength);
+			System.out.println("                                              (c) " + cLength + " is " + Perimeter);
+			
+			// Display the area
+			System.out.printf("\n                    And has a total area of: ");
+			System.out.println();
+			System.out.println("                    888888888888888888888888");
+			System.out.println("                    8                      8");
+			System.out.printf("                    8         " + "%-10.2f", Area);
+			System.out.println("   8");
+			System.out.println("                    8                      8");
+			System.out.println("                    888888888888888888888888");
+			
+		} //end else if
 		
-		System.out.println("\n\nThe Perimeter of a triangle with side lengths (a) " + aLength);
-		System.out.println("                                              (b) " + bLength);
-		System.out.println("                                              (c) " + cLength + " is " + Perimeter);
-		
-		// Display the area
-		System.out.printf("\n                                              And has a total area of: " + Area + "\n\n\n");
-
-		} // End of Public Static Void
+		System.out.println(" \n\n\n\nThe program has completed succesfully!");
+		} // End of main() method
 		 
 } // End of Public Class Sequential_Operation

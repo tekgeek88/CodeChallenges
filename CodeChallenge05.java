@@ -1,4 +1,7 @@
-
+/* A program that calculates the maximum sum of all solutions of a trinomial
+ * by allowing the user to input their own variables for each term Ak+Bk+C
+ * 
+ */
 
 import java.util.Scanner;
 
@@ -8,29 +11,15 @@ public class CodeChallenge05 {
 		
 		Scanner userInput = new Scanner (System.in);
 		
-		// the value of k at the end of the program
-		double resultK;
-		// initializing 
-		resultK = 0; 
-		// comment
+		// Initialize the variables to be used in the program
+		double a,b,c; 		// The variables used in the formula Ak^2-Bk+C
+		double kSquared; 	// The value of k squared
+		double sumK = 0; 	// The sum of all k outputs
+		double count; 		// The number of times a new number was plugged in for k
+		double resultK = 0; // The value of k at the end of the program.
+		boolean notZero = true;	// Prevents zero from being used as the A and/or B terms of the formula
 		
-		double sumK; // sum of all k outputs
-		sumK = 0;
-		
-		// value of k^2
-		double kSquared;
-		
-		// The variables for ( Ak^2-Bk+C ).
-		double a,b,c;
-		// comment
-		// when the program hits this input number, it stops
-		double d;
-
-		/*
-		 * Asks the user to input which numbers for the equation ( a*k^2 - b*k + c )
-		 */
-		boolean notZero;
-		notZero = true;
+		// Asks the user to input numbers used in the form of Ak^2-Bk+C
 		System.out.println("\n\nWelcome,");
 		System.out.println("this program lets you create you own equations and find out when "
 				+ "the sum of that equation reachs a specified number.");
@@ -40,11 +29,8 @@ public class CodeChallenge05 {
 		a = userInput.nextDouble();
 	
 		//Tests to make sure both A and b do not equal zero
-		
 		while (notZero){
-			
 			if(a == 0 ){
-				
 				System.out.println("Sorry, both A and B cannot equal zero");
 				System.out.println("Please try again:");
 				
@@ -60,6 +46,7 @@ public class CodeChallenge05 {
 		}
 	
 		
+		
 		System.out.println("What is the value of B");
 		b = userInput.nextDouble();
 		
@@ -67,15 +54,15 @@ public class CodeChallenge05 {
 		c = userInput.nextDouble();
 		
 		System.out.println("At what number do you want the program to stop");
-		d = userInput.nextDouble();
+		count = userInput.nextDouble();
 		
 		if (a < 0){
 			
-			while (d > 0){
+			while (count > 0){
 				System.out.println("The negative 'a' make this program a negative curve.");
 				System.out.println("Please try again.");
 				System.out.println("At what number do you want the program to stop");
-				d = userInput.nextDouble();
+				count = userInput.nextDouble();
 			}
 		}
 		else{
@@ -90,9 +77,9 @@ public class CodeChallenge05 {
 			
 			if (a > 0){
 				kSquared = Math.pow(k, 2);
-				sumK = (kSquared*a - b*k + c) + sumK;
+				sumK = ((kSquared*a) - (b*k) + c) + sumK;
 
-				if (sumK > d){
+				if (sumK > count){
 					resultK = k;
 					break;
 				}
@@ -104,7 +91,7 @@ public class CodeChallenge05 {
 				sumK = (kSquared*a - b*k + c) + sumK;
 				
 				
-				if (sumK < d){
+				if (sumK < count){
 					resultK = k;
 					break;
 				}
@@ -122,7 +109,7 @@ public class CodeChallenge05 {
 		System.out.println("A = " + a);
 		System.out.println("B = " + b);
 		System.out.println("C = " + c);
-		System.out.println("It stopped at = " + d);
+		System.out.println("It stopped at = " + count);
 		System.out.println();
 		System.out.print("The final value of k = ");
 		System.out.println(resultK);
