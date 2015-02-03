@@ -11,8 +11,6 @@
  ********************************************/
 
 public class CodeChallenge01 {
-	
-	private static boolean playAgain;
 
 	public static void main(String[] args){		//Beginning of Main() method
 		
@@ -34,7 +32,7 @@ public class CodeChallenge01 {
 				System.out.println("playAgain value is " + playAgain);
 				System.out.println("\n\n\n		.==========================================================.");
 				System.out.println("		*                                                           *");
-				System.out.println("		*         MathIsFun™: Solving Exponential Equations          *");
+				System.out.println("		*         MathIsFun™: Solving Exponential Equations         *");
 				System.out.println("		*                   By: Carl Argabright                     *");
 				System.out.println("		*                                                           *");
 				System.out.println("		*                   CS 142 - Dr. Basham                     *");
@@ -82,7 +80,6 @@ public class CodeChallenge01 {
 				} // End of if
 				else if (inputPlayAgain == 1){
 					playAgain = false;
-					CodeChallenge01.playAgain = false;
 					System.out.println("else if statement has run");
 					System.out.println("Playagain value is " + playAgain);
 				} //End of else if
