@@ -2,7 +2,8 @@
  * into polar coordinates
  */
 
-public class CodeChallenge04 {
+public class CodeChallenge04 { // git update
+	// comment added
 	
 	public static void main(String[] args) {
 		
@@ -51,31 +52,18 @@ public class CodeChallenge04 {
 	else if (inputX == 0){
 		System.out.println("else if x == 0 has ran");
 		    if (inputY == 0){
-		       System.out.println("The angle can only equal 0");
+		       System.out.println("inputY == 0");
+		    	System.out.println("The angle can only equal 0");
 		    }
 		    else if (inputY < 0){
+		    	System.out.println("inputY < 0");
 		    	System.out.println("The angle can only be 270 degrees");
 		    }
 		    else if (inputY > 0){
+		    	System.out.println("inputY > 0");
 		    	System.out.println("The angle can only be 90");
 		    }
 	}// end of else if X == 0
-			
-//	 End if
-//	else {
-//		System.out.println("The else statement ran\n");
-//		
-//		theta = Math.atan(((inputX/inputY) + Math.PI));
-//		System.out.println("theta = " + theta);
-//		System.out.println();
-//		System.out.println("The angle of theta in radians is: " + theta);
-//		System.out.println("The angle in degrees is: " + (theta * (180/Math.PI)) + "\n");
-
-
-//	} // end else	
-	
-	
-			
 			
 	
 	System.out.println("The program has ended");

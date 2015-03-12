@@ -1,10 +1,12 @@
+// This file was used to teach students that variables must be initialized before they can be used
+
 /* A program to test whether the IDE is
  * able to determine whether a variable
  * has been given a value.
  */
 
 
-public class CodeChallenge03 {
+public class Cs142Hw3ArgabrightCarl {
 	
 	public static void main(String[] args) {
 		
@@ -36,6 +38,8 @@ public class CodeChallenge03 {
 				rightY = 1;
 			} // end if
 			
+			// Changed this if statement to an else statement so that the compilier
+			// would know that Y would be given a value.
 			else {
 				rightY = 2;
 			} // end else
