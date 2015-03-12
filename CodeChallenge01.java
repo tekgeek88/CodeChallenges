@@ -1,4 +1,4 @@
-/********************************************	
+/**	
  * 	A simple command line calculator		
  * 	that asks a user for their name			
  * 	and gathers information in order		
@@ -8,7 +8,7 @@
  * 	@version 0.0.1							
  * 	@since   2015-01-16 					
  * 											
- ********************************************/
+*/
 
 public class CodeChallenge01 {
 	
@@ -20,6 +20,9 @@ public class CodeChallenge01 {
 		* 	Variable declaration statements
 		* 	@
 		************************************/
+		
+		//Hey, i'm testing to see how github works
+		
 			double inputX;  	// The variable used as the base
 			double inputY;		// The variable as exponent
 			String inputName = "Name";	// The variable used to store users name
