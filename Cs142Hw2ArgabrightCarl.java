@@ -1,6 +1,8 @@
+// This file uses Herons formula to find area of any triangle
 /**
  * The purpose of this program is to define lengths a, b, c.
- * The program will calculate the Perimeter, Semiperimeter, and Area.
+ * The program will calculate the perimeter, semiperimeter,
+ * and area of any triangle.
  *
  *
  * @author Tyler Fleckenstein
@@ -9,7 +11,7 @@
  *
  */
 
-public class CodeChallenge02 { // beginning of class
+public class Cs142Hw2ArgabrightCarl { // beginning of class
 
 	public static void main(String[] args) { // beginning of main method
 		

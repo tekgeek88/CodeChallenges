@@ -1,4 +1,8 @@
-/* *
+// This file is used to find the limit of a specified value.
+
+import java.text.DecimalFormat; // allows for custom format of numbers
+
+/**
  * A simple program to calculate all possible values for K
  * within a maximum range of a trinomial function that is
  * input by the user.
@@ -9,10 +13,7 @@
  * @author Tyler Fleckenstein
  * 
  */
-
-import java.text.DecimalFormat; // allows for custom format of numbers
-
-public class CodeChallenge05 {
+public class Cs142Hw5ArgabrightCarl {
 
 	public static void main(String[] args) {
 		

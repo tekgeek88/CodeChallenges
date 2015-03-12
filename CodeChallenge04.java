@@ -65,22 +65,6 @@ public class CodeChallenge04 { // git update
 		    }
 	}// end of else if X == 0
 			
-//	 End if
-//	else {
-//		System.out.println("The else statement ran\n");
-//		
-//		theta = Math.atan(((inputX/inputY) + Math.PI));
-//		System.out.println("theta = " + theta);
-//		System.out.println();
-//		System.out.println("The angle of theta in radians is: " + theta);
-//		System.out.println("The angle in degrees is: " + (theta * (180/Math.PI)) + "\n");
-
-
-//	} // end else	
-	
-	
-			
-			
 	
 	System.out.println("The program has ended");
 	
